@@ -115,9 +115,6 @@ header nav ul li .active i {
     header {
         left: -300px;
     }
-    header .footer {
-        left: -300px;
-    }
     #MenuBtn {
         display: block;
     }
@@ -129,11 +126,6 @@ header nav ul li .active i {
 .mobile-nav-active header {
     left: 0;
 }
-
-.mobile-nav-active header .footer {
-    left: 0;
-}
-
 main {
     margin-left: 300px;
     background-color: var(--bgColor);
@@ -452,7 +444,7 @@ main {
         grid-gap: 10px;
     }
 }
-#resume{
+ #resume{
     padding: 70px 30px;
     background-color: white;
 }
@@ -588,7 +580,7 @@ main {
         flex-basis: 100%;
     }
     
-}
+} 
 #portfolio
 {
     padding: 70px 30px;
@@ -839,4 +831,5 @@ main {
         padding: 50px;
     }
 }
+
 
