@@ -21,6 +21,18 @@ export const education: Education[] = [
         degree: "B.Sc. in Computer Science and Engineering",
         period: "2022 - 2026 (Expected)",
         cgpa: "3.25 / 4.00"
+    },
+    {
+        institution: "Rajshahi College",
+        degree: "Higher Secondary Certificate (HSC)",
+        period: "2018 - 2020",
+        cgpa: "5.00 / 5.00"
+    },
+    {
+        institution: "Rajshahi Collegiate School",
+        degree: "Secondary School Certificate (SSC)",
+        period: "2016 - 2018",
+        cgpa: "5.00 / 5.00"
     }
 ];
 
