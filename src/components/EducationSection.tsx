@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { BookOpen } from "lucide-react";
+import { BookOpen, CalendarDays, GraduationCap } from "lucide-react";
 import { education } from "@/data/portfolio";
 
 export default function EducationSection() {
@@ -27,10 +27,11 @@ export default function EducationSection() {
                 <div>
                     <h3 className="text-2xl font-bold mb-8 text-primary flex items-center gap-3">
                         <div className="w-10 h-10 rounded-lg bg-surface flex items-center justify-center border border-white/5">
-                            <BookOpen size={20} className="text-accent" />
+                            <GraduationCap size={20} className="text-accent" />
                         </div>
                         Academic Journey
                     </h3>
+
                     <div className="space-y-6">
                         {education.map((edu, index) => (
                             <motion.div
@@ -41,14 +42,24 @@ export default function EducationSection() {
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
                                 className="glass rounded-2xl p-6 border-l-4 border-l-accent hover:shadow-[0_0_30px_rgba(16,185,129,0.1)] transition-all duration-300"
                             >
-                                <h4 className="text-xl font-bold text-primary mb-1">{edu.degree}</h4>
-                                <p className="text-accent font-medium mb-4">{edu.institution}</p>
-                                <div className="flex flex-wrap justify-between items-center text-sm text-muted bg-surface/50 p-3 rounded-lg">
-                                    <span className="flex items-center gap-2">
-                                        <span className="w-2 h-2 rounded-full bg-accent/50"></span>
-                                        {edu.period}
-                                    </span>
-                                    <span className="font-semibold text-primary">CGPA: {edu.cgpa}</span>
+                                <h4 className="text-xl md:text-2xl font-bold text-primary mb-2">
+                                    {edu.degree}
+                                </h4>
+
+                                <p className="text-accent font-medium mb-5">
+                                    {edu.institution}
+                                </p>
+
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                                    <div className="flex items-center gap-3 bg-surface/50 px-4 py-3 rounded-lg text-muted">
+                                        <CalendarDays size={16} className="text-accent shrink-0" />
+                                        <span>{edu.period}</span>
+                                    </div>
+
+                                    <div className="flex items-center gap-3 bg-surface/50 px-4 py-3 rounded-lg text-primary font-semibold">
+                                        <span className="w-2 h-2 rounded-full bg-accent shrink-0"></span>
+                                        <span>CGPA: {edu.cgpa}</span>
+                                    </div>
                                 </div>
                             </motion.div>
                         ))}
