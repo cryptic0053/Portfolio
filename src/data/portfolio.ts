@@ -160,7 +160,7 @@ export const skills: SkillCategory[] = [
         skills: ["PostgreSQL", "MySQL", "SQLite", "MongoDB"]
     },
     {
-        name: "Other",
+        name: "Others",
         skills: ["OpenGL", "GLSL", "Git", "GitHub", "Linux", "Postman"]
     }
 ];
