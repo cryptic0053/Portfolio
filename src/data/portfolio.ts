@@ -31,7 +31,7 @@ export const education: Education[] = [
     {
         institution: "Rajshahi Collegiate School",
         degree: "Secondary School Certificate (SSC)",
-        period: "2016 - 2018",
+        period: "2010 - 2018",
         cgpa: "5.00 / 5.00"
     }
 ];
