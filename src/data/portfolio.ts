@@ -26,13 +26,13 @@ export const education: Education[] = [
         institution: "Rajshahi College",
         degree: "Higher Secondary Certificate (HSC)",
         period: "2018 - 2020",
-        cgpa: "5.00 / 5.00"
+        gpa: "5.00 / 5.00"
     },
     {
         institution: "Rajshahi Collegiate School",
         degree: "Secondary School Certificate (SSC)",
         period: "2010 - 2018",
-        cgpa: "5.00 / 5.00"
+        gpa: "5.00 / 5.00"
     }
 ];
 
@@ -128,13 +128,6 @@ export const experiences: Experience[] = [
         period: "January 2025",
         description:
             "Contributed to the planning and successful organization of BITFEST 2025 through coordination, teamwork, and event support."
-    },
-    {
-        title: "Independent Project Developer",
-        organization: "GitHub",
-        period: "Ongoing",
-        description:
-            "Maintains repositories focused on full stack development, DevOps practices, cloud-native tools, and academic projects."
     },
     {
         title: "Certifications in DevOps and Full Stack Web Development",
