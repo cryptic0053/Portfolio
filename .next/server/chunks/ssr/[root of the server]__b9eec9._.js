@@ -85,7 +85,7 @@ __turbopack_esm__({
 const portfolioData = {
     name: "Anirban Ghosh Argha",
     role: "4th-Year Computer Science and Engineering Student at KUET",
-    cgpa: "3.26",
+    cgpa: "3.25",
     titles: [
         "AI Researcher",
         "Full Stack Developer",
@@ -135,20 +135,6 @@ const researchPapers = [
     }
 ];
 const projects = [
-    {
-        id: "project-finch-ec",
-        title: "Finch-EC",
-        description: "A scalable e-commerce application built with Vue.js and Node.js, using a decoupled architecture containerized with Docker and orchestrated through Kubernetes, with Prometheus-based monitoring support.",
-        techBadges: [
-            "Vue.js",
-            "Node.js",
-            "Docker",
-            "Kubernetes",
-            "Prometheus"
-        ],
-        githubLink: "#",
-        liveLink: "#"
-    },
     {
         id: "project-1",
         title: "Learning Management System",
@@ -202,6 +188,20 @@ const projects = [
         liveLink: "#"
     },
     {
+        id: "project-finch-ec",
+        title: "Finch-EC",
+        description: "A scalable e-commerce application built with Vue.js and Node.js, using a decoupled architecture containerized with Docker and orchestrated through Kubernetes, with Prometheus-based monitoring support.",
+        techBadges: [
+            "Vue.js",
+            "Node.js",
+            "Docker",
+            "Kubernetes",
+            "Prometheus"
+        ],
+        githubLink: "#",
+        liveLink: "#"
+    },
+    {
         id: "project-5",
         title: "Social Media App",
         description: "A web-based social platform with core community features, built to practice full stack development, user interaction, and database-driven application design.",
@@ -229,7 +229,7 @@ const experiences = [
         description: "Contributed to the planning and successful organization of BITFEST 2025 through coordination, teamwork, and event support."
     },
     {
-        title: "Active GitHub Developer",
+        title: "Independent Project Developer",
         organization: "GitHub",
         period: "Ongoing",
         description: "Maintains repositories focused on full stack development, DevOps practices, cloud-native tools, and academic projects."
@@ -251,7 +251,6 @@ const skills = [
             "Java",
             "JavaScript",
             "PHP",
-            "Swift",
             "SQL"
         ]
     },
@@ -264,7 +263,6 @@ const skills = [
             "FastAPI",
             "Vue.js",
             "Node.js",
-            "Laravel",
             "Tailwind CSS"
         ]
     },
@@ -276,9 +274,7 @@ const skills = [
             "AWS",
             "CI/CD",
             "GitHub Actions",
-            "Prometheus",
-            "Grafana",
-            "SonarQube"
+            "Prometheus"
         ]
     },
     {
@@ -289,7 +285,6 @@ const skills = [
             "Scikit-learn",
             "Pandas",
             "NumPy",
-            "NLTK",
             "Machine Learning"
         ]
     },

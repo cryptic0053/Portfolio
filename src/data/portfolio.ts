@@ -3,7 +3,7 @@ import { ResearchPaper, Project, SkillCategory, Education, Experience } from "@/
 export const portfolioData = {
     name: "Anirban Ghosh Argha",
     role: "4th-Year Computer Science and Engineering Student at KUET",
-    cgpa: "3.26",
+    cgpa: "3.25",
     titles: ["AI Researcher", "Full Stack Developer", "DevOps Enthusiast"],
     description:
         "I am a 4th-year Computer Science and Engineering student at KUET with interests in Artificial Intelligence, full stack development, and cloud-native systems. I enjoy building practical software, exploring scalable backend technologies, and working on research problems that connect theory with real-world applications.",
@@ -47,15 +47,6 @@ export const researchPapers: ResearchPaper[] = [
 
 export const projects: Project[] = [
     {
-        id: "project-finch-ec",
-        title: "Finch-EC",
-        description:
-            "A scalable e-commerce application built with Vue.js and Node.js, using a decoupled architecture containerized with Docker and orchestrated through Kubernetes, with Prometheus-based monitoring support.",
-        techBadges: ["Vue.js", "Node.js", "Docker", "Kubernetes", "Prometheus"],
-        githubLink: "#",
-        liveLink: "#"
-    },
-    {
         id: "project-1",
         title: "Learning Management System",
         description:
@@ -92,6 +83,15 @@ export const projects: Project[] = [
         liveLink: "#"
     },
     {
+        id: "project-finch-ec",
+        title: "Finch-EC",
+        description:
+            "A scalable e-commerce application built with Vue.js and Node.js, using a decoupled architecture containerized with Docker and orchestrated through Kubernetes, with Prometheus-based monitoring support.",
+        techBadges: ["Vue.js", "Node.js", "Docker", "Kubernetes", "Prometheus"],
+        githubLink: "#",
+        liveLink: "#"
+    },
+    {
         id: "project-5",
         title: "Social Media App",
         description:
@@ -118,7 +118,7 @@ export const experiences: Experience[] = [
             "Contributed to the planning and successful organization of BITFEST 2025 through coordination, teamwork, and event support."
     },
     {
-        title: "Active GitHub Developer",
+        title: "Independent Project Developer",
         organization: "GitHub",
         period: "Ongoing",
         description:
@@ -136,19 +136,19 @@ export const experiences: Experience[] = [
 export const skills: SkillCategory[] = [
     {
         name: "Languages",
-        skills: ["C", "C++", "Python", "Java", "JavaScript", "PHP", "Swift", "SQL"]
+        skills: ["C", "C++", "Python", "Java", "JavaScript", "PHP", "SQL"]
     },
     {
         name: "Frameworks",
-        skills: ["React", "Next.js", "Django", "FastAPI", "Vue.js", "Node.js", "Laravel", "Tailwind CSS"]
+        skills: ["React", "Next.js", "Django", "FastAPI", "Vue.js", "Node.js", "Tailwind CSS"]
     },
     {
         name: "DevOps",
-        skills: ["Docker", "Kubernetes", "AWS", "CI/CD", "GitHub Actions", "Prometheus", "Grafana", "SonarQube"]
+        skills: ["Docker", "Kubernetes", "AWS", "CI/CD", "GitHub Actions", "Prometheus"]
     },
     {
         name: "AI / ML",
-        skills: ["PyTorch", "TensorFlow", "Scikit-learn", "Pandas", "NumPy", "NLTK", "Machine Learning"]
+        skills: ["PyTorch", "TensorFlow", "Scikit-learn", "Pandas", "NumPy", "Machine Learning"]
     },
     {
         name: "Databases",
