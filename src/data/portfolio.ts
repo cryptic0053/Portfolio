@@ -130,7 +130,7 @@ export const experiences: Experience[] = [
             "Contributed to the planning and successful organization of BITFEST 2025 through coordination, teamwork, and event support."
     },
     {
-        title: "Certifications in DevOps and Full Stack Web Development",
+        title: "Certifications in DevOps Engineering and Full Stack Web Development",
         organization: "Ostad",
         period: "Completed",
         description:
