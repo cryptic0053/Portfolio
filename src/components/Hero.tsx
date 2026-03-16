@@ -61,7 +61,7 @@ export default function Hero() {
                     <div className="text-2xl md:text-4xl font-semibold text-muted min-h-[3rem] md:min-h-[3.5rem] mb-6 flex flex-wrap items-center">
                         <span>I am a</span>
                         <span className="text-primary ml-2 min-w-[180px] md:min-w-[240px] inline-flex items-center">
-                            {displayText || portfolioData.titles[0]}
+                            {displayText}
                             <span className="animate-pulse w-[2px] h-7 md:h-8 bg-accent ml-1"></span>
                         </span>
                     </div>
