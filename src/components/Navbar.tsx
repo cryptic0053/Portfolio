@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Download, Menu, X } from "lucide-react";
+import { portfolioData } from "@/data/portfolio";
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
@@ -52,7 +53,9 @@ export default function Navbar() {
                         ))}
                     </ul>
                     <a
-                        href="/resume.pdf"
+                        href={portfolioData.socials.cv}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full bg-surface border border-white/10 hover:bg-white/5 transition-all text-primary hover:border-accent/50 group"
                     >
                         Download CV
@@ -86,7 +89,9 @@ export default function Navbar() {
                         ))}
                     </ul>
                     <a
-                        href="/resume.pdf"
+                        href={portfolioData.socials.cv}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center justify-center gap-2 px-4 py-3 text-sm font-medium rounded-lg bg-accent text-neutral-900 transition-all"
                     >
                         Download CV

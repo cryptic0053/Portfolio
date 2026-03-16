@@ -11,7 +11,7 @@ export const portfolioData = {
         github: "https://github.com/cryptic0053",
         linkedin: "https://www.linkedin.com/in/anirban-argha-4a20b7278/",
         email: "mailto:anirbanargha0053@gmail.com",
-        cv: "/resume.pdf"
+        cv: "/2007094_CV.pdf"
     }
 };
 
