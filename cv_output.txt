@@ -1,0 +1,75 @@
+﻿Anirban Ghosh Argha
++
+CSE, KUET, Khulna, Bangladesh
+# anirbanargha0053@gmail.com
+º github.com/cryptic0053
+∩ linkedin.com/in/anirban-argha
+Research Interests
+Machine Learning and Deep Learning with a focus on Explainable AI (XAI) and Trustworthy AI; Natural
+Language Processing (NLP); Data-centric AI, Database Systems, and Big Data Analytics; Scalable
+Cloud-based and Distributed Systems for AI deployment.
+Education
+Khulna University of Engineering & Technology (KUET)
+2022 û 2026 (Expected)
+B.Sc. in Computer Science and Engineering
+Khulna, Bangladesh
+ò CGPA: 3.26 / 4.00
+Ongoing Research & Publications
+ò A Quantitatively Validated Explainable AI Framework for Maternal Health Risk Prediction
+in Rural Bangladesh (Expected to submit): Developing an XAI pipeline with quantitative validation
+(e.g., faithfulness and stability) to support risk prediction and clinical interpretability for rural maternal
+healthcare.
+ò An Efficient and Scalable Algorithm for Reverse Top-k Query Processing (Ongoing): Investigating
+algorithmic optimizations to enhance scalability and performance for processing reverse top-k queries
+in large-scale datasets.
+Technical Skills
+ò Languages: C++, Python, Java, JavaScript, C, PHP, Swift, SQL
+ò Frameworks: React, Django, FastAPI, Vue.js, Node.js, Laravel, Bootstrap, Tailwind CSS
+ò DevOps & Cloud: Docker, Kubernetes, AWS (Lambda), GitHub Actions, Prometheus, Grafana,
+SonarQube
+ò Tools & Platforms: Git, Linux, Postman, Android Studio, Xcode, VS Code, Render, Vercel
+ò Databases: PostgreSQL, MySQL, SQLite, MongoDB
+ò Machine Learning: Scikit-Learn, Pandas, NumPy, NLTK
+ò Concepts: Microservices, CI/CD Pipelines, REST APIs, System Design, OOP, Data Structures
+Key Software Projects
+ò Finch-EC (Microservices E-Commerce Platform): Developed a scalable e-commerce application
+using Vue.js and Node.js. Implemented a decoupled architecture fully containerized with Docker and
+orchestrated via Kubernetes (K8s) with real-time monitoring using Prometheus.
+1
+
+ò Zero-Downtime Deployment Demonstration: Engineered a fault-tolerant web application demon-
+strating High Availability (HA) strategies on Kubernetes. Implemented Rolling Updates and Health
+Probes to ensure 100% uptime during version upgrades.
+ò Learning Management System (LMS): Built a full-stack educational platform using React and
+Django. Features include Role-Based Access Control (RBAC) for students/teachers and secure JWT
+authentication.
+ò FastAPI Lambda Serverless API: Createdaproduction-readytemplatefordeployinghigh-performance
+Python APIs on AWS Lambda using container images and Mangum adapter.
+Certifications & Professional Training
+ò Mastering DevOps: From Fundamentals to Advanced Practices
+Ostad (Online Training)
+Comprehensive training on CI/CD pipelines, Docker, Kubernetes, and Cloud Infrastructure.
+ò Full Stack Web Development with Python, Django & React
+Ostad (Online Training)
+Specialized training in building scalable web applications using the Django Rest Framework and React.js.
+Awards and Leadership
+ò 1st Runner Up ù Three Minute Thesis (3MT) Segment
+SciBlitz 1.0 (2025)
+Awarded by IEEE CUET Student Branch for effectively communicating scholarly research concisely.
+ò Junior Executive Member ù BITFEST 2025
+January 2025
+Recognized for outstanding leadership and dedication in organizing BITFEST 2025, hosted by the Dept. of
+CSE, KUET.
+ò Active Open Source Contributor
+Ongoing
+Maintains active repositories focused on DevOps automation, Cloud Native technologies, and Full Stack devel-
+opment patterns on GitHub.
+References
+Dr. K. M. Azharul Hasan
+Md Mehrab Hossain Opi
+Professor, Dept. of CSE, KUET
+Lecturer, Dept. of CSE, KUET
+Email: az@cse.kuet.ac.bd
+Email: opi@cse.kuet.ac.bd
+2
+

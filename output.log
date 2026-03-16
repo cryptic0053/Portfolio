@@ -1,0 +1,56 @@
+﻿node : E:\Portfolio-ne
+w\parse_pdf.js:6
+At line:1 char:1
++ node parse_pdf.js 
+2>&1 | Out-File 
+-Encoding utf8 
+output.log; Get-Cont 
+...
++ 
+~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (E:\Portfol   
+ io-new\parse_pdf.    
+js:6:String) [],     
+RemoteException
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+pdf(dataBuffer).then(f
+unction (data) {
+^
+
+TypeError: pdf is not 
+a function
+    at 
+Object.<anonymous> (E:
+\Portfolio-new\parse_p
+df.js:6:1)
+    at 
+Module._compile (node:
+internal/modules/cjs/l
+oader:1812:14)
+    at Object..js (nod
+e:internal/modules/cjs
+/loader:1943:10)
+    at Module.load (no
+de:internal/modules/cj
+s/loader:1533:32)
+    at Module._load (n
+ode:internal/modules/c
+js/loader:1335:12)
+    at wrapModuleLoad 
+(node:internal/modules
+/cjs/loader:255:19)
+    at Module.executeU
+serEntryPoint [as 
+runMain] (node:interna
+l/modules/run_main:154
+:5)
+    at node:internal/m
+ain/run_main_module:33
+:47
+
+Node.js v24.14.0

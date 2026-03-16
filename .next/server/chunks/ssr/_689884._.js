@@ -14,17 +14,17 @@ __turbopack_esm__({
 const portfolioData = {
     name: "Anirban Argha",
     role: "4th-Year Computer Science Student at KUET",
-    cgpa: "3.3",
+    cgpa: "3.25",
     titles: [
         "AI Researcher",
         "Full Stack Developer",
         "DevOps Enthusiast"
     ],
-    description: "I build high-performance scalable systems and conduct research in Artificial Intelligence. Passionate about Explainable AI, modern web engineering, and cloud infrastructure.",
+    description: "I am a 4th-year Computer Science and Engineering student at KUET with strong interests in Artificial Intelligence, full stack development, and cloud-native systems. I enjoy building practical software, exploring scalable backend technologies, and working on research problems that connect theory with real-world applications.",
     socials: {
-        github: "https://github.com/anirban-argha",
-        linkedin: "https://linkedin.com/in/anirban-argha",
-        email: "mailto:contact@example.com",
+        github: "https://github.com/cryptic0053",
+        linkedin: "https://www.linkedin.com/in/anirban-argha-4a20b7278/",
+        email: "mailto:anirbanargha0053@gmail.com",
         cv: "/resume.pdf"
     }
 };
@@ -40,7 +40,7 @@ const researchPapers = [
             "Explainable AI"
         ],
         link: "#",
-        status: "Published"
+        status: "Under Review"
     },
     {
         id: "paper-2",
@@ -52,48 +52,73 @@ const researchPapers = [
             "Query Processing"
         ],
         link: "#",
-        status: "Under Review"
+        status: "On Going"
     }
 ];
 const projects = [
     {
         id: "project-1",
-        title: "EcoScale Cloud Platform",
-        description: "A distributed cloud management abstraction layer built on Kubernetes that auto-scales resources based on predictive usage patterns using an integrated ML model.",
+        title: "Learning Management System",
+        description: "A full stack learning platform built with modern web technologies, focused on usability, clean backend architecture, and efficient data handling for academic environments.",
         techBadges: [
-            "Kubernetes",
-            "Docker",
-            "AWS",
-            "Python",
-            "React"
+            "React",
+            "Django",
+            "PostgreSQL",
+            "JWT"
         ],
-        githubLink: "#",
+        githubLink: "https://github.com/cryptic0053/Learning-Management-System",
         liveLink: "#"
     },
     {
         id: "project-2",
-        title: "HyperTrade Backend Engine",
-        description: "High-frequency trading backend engine supporting real-time market data ingestion and order execution via WebSocket with ultra-low latency.",
+        title: "Cafe Beel Harina OpenGL 3D",
+        description: "An interactive 3D graphics project developed with OpenGL and C++, designed to explore rendering, scene construction, lighting, and immersive visual interaction.",
         techBadges: [
-            "Django",
-            "PostgreSQL",
-            "Redis",
-            "Docker"
+            "C++",
+            "OpenGL",
+            "GLSL",
+            "Computer Graphics"
         ],
-        githubLink: "#",
+        githubLink: "https://github.com/cryptic0053/CafeBeelHarina-OpenGL-3D",
         liveLink: "#"
     },
     {
         id: "project-3",
-        title: "Neural Vision API",
-        description: "Robust REST API serving various computer vision models built with PyTorch, capable of real-time object detection and segmentation.",
+        title: "Zero Downtime App",
+        description: "A DevOps-oriented application that demonstrates reliable deployment strategies, service continuity, and scalable infrastructure practices using container-based workflows.",
         techBadges: [
-            "FastAPI",
-            "PyTorch",
-            "AWS",
-            "Docker"
+            "Docker",
+            "Kubernetes",
+            "DevOps",
+            "Deployment"
         ],
-        githubLink: "#",
+        githubLink: "https://github.com/cryptic0053/zero-downtime-app",
+        liveLink: "#"
+    },
+    {
+        id: "project-4",
+        title: "FastAPI Lambda",
+        description: "A lightweight serverless backend project for deploying FastAPI services on AWS Lambda, focused on API design, efficiency, and cloud deployment.",
+        techBadges: [
+            "Python",
+            "FastAPI",
+            "AWS",
+            "Serverless"
+        ],
+        githubLink: "https://github.com/cryptic0053/fastapi_lambda",
+        liveLink: "#"
+    },
+    {
+        id: "project-5",
+        title: "Social Media App",
+        description: "A web-based social platform with core community features, built to practice full stack development, user interaction, and database-driven application design.",
+        techBadges: [
+            "Django",
+            "PostgreSQL",
+            "Bootstrap",
+            "Web App"
+        ],
+        githubLink: "https://github.com/cryptic0053/Social-Media-App",
         liveLink: "#"
     }
 ];
@@ -101,11 +126,13 @@ const skills = [
     {
         name: "Languages",
         skills: [
+            "C",
             "C++",
             "Python",
             "Java",
             "JavaScript",
-            "TypeScript"
+            "PHP",
+            "SQL"
         ]
     },
     {
@@ -113,7 +140,8 @@ const skills = [
         skills: [
             "React",
             "Django",
-            "Next.js"
+            "Next.js",
+            "FastAPI"
         ]
     },
     {
@@ -122,7 +150,8 @@ const skills = [
             "Docker",
             "Kubernetes",
             "AWS",
-            "CI/CD"
+            "CI/CD",
+            "Linux"
         ]
     },
     {
@@ -130,7 +159,18 @@ const skills = [
         skills: [
             "PyTorch",
             "TensorFlow",
-            "Scikit-learn"
+            "Scikit-learn",
+            "Machine Learning"
+        ]
+    },
+    {
+        name: "Other",
+        skills: [
+            "OpenGL",
+            "GLSL",
+            "PostgreSQL",
+            "Git",
+            "GitHub"
         ]
     }
 ];

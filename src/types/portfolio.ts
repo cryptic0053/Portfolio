@@ -4,7 +4,7 @@ export interface ResearchPaper {
     abstract: string;
     tags: string[];
     link: string;
-    status: "Published" | "Under Review";
+    status: "Published" | "Under Review" | "On Going";
 }
 
 export interface Project {
