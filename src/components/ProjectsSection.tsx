@@ -20,55 +20,82 @@ export default function ProjectsSection() {
                         Engineering Projects
                     </h2>
                     <p className="text-muted max-w-2xl text-lg">
-                        Showcasing scalable architectures, robust backend systems, and modern full-stack web applications.
+                        A selection of academic and technical projects spanning full stack development, DevOps, cloud deployment, and computer graphics.
                     </p>
                 </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {projects.map((project, index) => (
-                        <motion.div
-                            key={project.id}
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            viewport={{ once: true, margin: "-50px" }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="glass rounded-2xl p-6 flex flex-col h-full hover:shadow-[0_0_30px_rgba(16,185,129,0.1)] hover:-translate-y-1 transition-all duration-300 group"
-                        >
-                            <div className="flex justify-between items-start mb-4">
-                                <div className="w-10 h-10 rounded-lg bg-surface flex items-center justify-center border border-white/5 group-hover:border-accent/30 group-hover:bg-accent/10 transition-colors">
-                                    <Code className="text-muted group-hover:text-accent transition-colors" size={20} />
-                                </div>
-                                <div className="flex items-center gap-3">
-                                    {project.githubLink && (
-                                        <a href={project.githubLink} className="text-muted hover:text-primary transition-colors">
-                                            <Github size={20} />
-                                        </a>
+                    {projects.map((project, index) => {
+                        const hasGithub = project.githubLink && project.githubLink !== "#";
+                        const hasLive = project.liveLink && project.liveLink !== "#";
+
+                        return (
+                            <motion.div
+                                key={project.id}
+                                initial={{ opacity: 0, scale: 0.95 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                viewport={{ once: true, margin: "-50px" }}
+                                transition={{ duration: 0.5, delay: index * 0.1 }}
+                                className="glass rounded-2xl p-6 flex flex-col h-full hover:shadow-[0_0_30px_rgba(16,185,129,0.1)] hover:-translate-y-1 transition-all duration-300 group"
+                            >
+                                <div className="flex justify-between items-start mb-4">
+                                    <div className="w-10 h-10 rounded-lg bg-surface flex items-center justify-center border border-white/5 group-hover:border-accent/30 group-hover:bg-accent/10 transition-colors">
+                                        <Code
+                                            className="text-muted group-hover:text-accent transition-colors"
+                                            size={20}
+                                        />
+                                    </div>
+
+                                    {(hasGithub || hasLive) && (
+                                        <div className="flex items-center gap-3">
+                                            {hasGithub && (
+                                                <a
+                                                    href={project.githubLink}
+                                                    target="_blank"
+                                                    rel="noreferrer"
+                                                    aria-label={`${project.title} GitHub repository`}
+                                                    className="text-muted hover:text-primary transition-colors"
+                                                >
+                                                    <Github size={20} />
+                                                </a>
+                                            )}
+
+                                            {hasLive && (
+                                                <a
+                                                    href={project.liveLink}
+                                                    target="_blank"
+                                                    rel="noreferrer"
+                                                    aria-label={`${project.title} live demo`}
+                                                    className="text-muted hover:text-accent transition-colors"
+                                                >
+                                                    <ExternalLink size={20} />
+                                                </a>
+                                            )}
+                                        </div>
                                     )}
-                                    {project.liveLink && (
-                                        <a href={project.liveLink} className="text-muted hover:text-accent transition-colors">
-                                            <ExternalLink size={20} />
-                                        </a>
-                                    )}
                                 </div>
-                            </div>
 
-                            <h3 className="text-xl font-bold mb-3 text-primary group-hover:text-accent transition-colors">
-                                {project.title}
-                            </h3>
+                                <h3 className="text-xl font-bold mb-3 text-primary group-hover:text-accent transition-colors">
+                                    {project.title}
+                                </h3>
 
-                            <p className="text-muted text-sm mb-6 flex-1 leading-relaxed">
-                                {project.description}
-                            </p>
+                                <p className="text-muted text-sm mb-6 flex-1 leading-relaxed">
+                                    {project.description}
+                                </p>
 
-                            <div className="flex flex-wrap gap-2 mt-auto">
-                                {project.techBadges.map((tech) => (
-                                    <span key={tech} className="text-[11px] font-medium px-2 py-1 rounded bg-surface/50 text-muted/80 border border-white/5">
-                                        {tech}
-                                    </span>
-                                ))}
-                            </div>
-                        </motion.div>
-                    ))}
+                                <div className="flex flex-wrap gap-2 mt-auto">
+                                    {project.techBadges.map((tech) => (
+                                        <span
+                                            key={tech}
+                                            className="text-[11px] font-medium px-2.5 py-1 rounded bg-surface/50 text-muted/80 border border-white/5"
+                                        >
+                                            {tech}
+                                        </span>
+                                    ))}
+                                </div>
+                            </motion.div>
+                        );
+                    })}
                 </div>
             </div>
         </section>
