@@ -75,21 +75,23 @@ __turbopack_export_namespace__(__TURBOPACK__imported__module__$5b$project$5d2f$s
 var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, z: __turbopack_require_stub__ } = __turbopack_context__;
 {
 __turbopack_esm__({
+    "education": (()=>education),
+    "experiences": (()=>experiences),
     "portfolioData": (()=>portfolioData),
     "projects": (()=>projects),
     "researchPapers": (()=>researchPapers),
     "skills": (()=>skills)
 });
 const portfolioData = {
-    name: "Anirban Argha",
-    role: "4th-Year Computer Science Student at KUET",
-    cgpa: "3.25",
+    name: "Anirban Ghosh Argha",
+    role: "4th-Year Computer Science and Engineering Student at KUET",
+    cgpa: "3.26",
     titles: [
         "AI Researcher",
         "Full Stack Developer",
         "DevOps Enthusiast"
     ],
-    description: "I am a 4th-year Computer Science and Engineering student at KUET with strong interests in Artificial Intelligence, full stack development, and cloud-native systems. I enjoy building practical software, exploring scalable backend technologies, and working on research problems that connect theory with real-world applications.",
+    description: "I am a 4th-year Computer Science and Engineering student at KUET with interests in Artificial Intelligence, full stack development, and cloud-native systems. I enjoy building practical software, exploring scalable backend technologies, and working on research problems that connect theory with real-world applications.",
     socials: {
         github: "https://github.com/cryptic0053",
         linkedin: "https://www.linkedin.com/in/anirban-argha-4a20b7278/",
@@ -97,11 +99,19 @@ const portfolioData = {
         cv: "/resume.pdf"
     }
 };
+const education = [
+    {
+        institution: "Khulna University of Engineering & Technology (KUET)",
+        degree: "B.Sc. in Computer Science and Engineering",
+        period: "2022 - 2026 (Expected)",
+        cgpa: "3.25 / 4.00"
+    }
+];
 const researchPapers = [
     {
         id: "paper-1",
         title: "Quantitatively Validated XAI Framework for Maternal Health Risk Prediction in Rural Bangladesh",
-        abstract: "A novel Explainable AI framework applied to predicting maternal health risks, validated through quantitative metrics to ensure interpretability and reliability in critical healthcare scenarios.",
+        abstract: "A novel Explainable AI framework applied to maternal health risk prediction, with quantitative validation to assess interpretability and reliability in critical healthcare settings.",
         tags: [
             "AI",
             "Machine Learning",
@@ -114,21 +124,35 @@ const researchPapers = [
     {
         id: "paper-2",
         title: "Scalable Algorithm for Reverse Top-k Query Processing",
-        abstract: "An optimized and scalable algorithmic approach to processing reverse top-k queries efficiently over large-scale datasets, reducing computational overhead while maintaining high accuracy.",
+        abstract: "An optimized and scalable algorithmic approach for reverse top-k query processing over large-scale datasets, designed to reduce computational overhead while maintaining strong performance.",
         tags: [
             "Databases",
             "Algorithms",
             "Query Processing"
         ],
         link: "#",
-        status: "On Going"
+        status: "Ongoing"
     }
 ];
 const projects = [
     {
+        id: "project-finch-ec",
+        title: "Finch-EC",
+        description: "A scalable e-commerce application built with Vue.js and Node.js, using a decoupled architecture containerized with Docker and orchestrated through Kubernetes, with Prometheus-based monitoring support.",
+        techBadges: [
+            "Vue.js",
+            "Node.js",
+            "Docker",
+            "Kubernetes",
+            "Prometheus"
+        ],
+        githubLink: "#",
+        liveLink: "#"
+    },
+    {
         id: "project-1",
         title: "Learning Management System",
-        description: "A full stack learning platform built with modern web technologies, focused on usability, clean backend architecture, and efficient data handling for academic environments.",
+        description: "A full stack learning platform designed for academic environments, with emphasis on usability, clean backend architecture, and efficient data management.",
         techBadges: [
             "React",
             "Django",
@@ -141,7 +165,7 @@ const projects = [
     {
         id: "project-2",
         title: "Cafe Beel Harina OpenGL 3D",
-        description: "An interactive 3D graphics project developed with OpenGL and C++, designed to explore rendering, scene construction, lighting, and immersive visual interaction.",
+        description: "An interactive 3D graphics project developed with OpenGL and C++, focused on scene construction, rendering, lighting, and immersive visual interaction.",
         techBadges: [
             "C++",
             "OpenGL",
@@ -154,7 +178,7 @@ const projects = [
     {
         id: "project-3",
         title: "Zero Downtime App",
-        description: "A DevOps-oriented application that demonstrates reliable deployment strategies, service continuity, and scalable infrastructure practices using container-based workflows.",
+        description: "A DevOps-oriented project demonstrating reliable deployment strategies, service continuity, and scalable infrastructure practices using container-based workflows.",
         techBadges: [
             "Docker",
             "Kubernetes",
@@ -167,7 +191,7 @@ const projects = [
     {
         id: "project-4",
         title: "FastAPI Lambda",
-        description: "A lightweight serverless backend project for deploying FastAPI services on AWS Lambda, focused on API design, efficiency, and cloud deployment.",
+        description: "A lightweight serverless backend project for deploying FastAPI services on AWS Lambda, focused on clean API design and efficient cloud deployment.",
         techBadges: [
             "Python",
             "FastAPI",
@@ -191,6 +215,32 @@ const projects = [
         liveLink: "#"
     }
 ];
+const experiences = [
+    {
+        title: "1st Runner-Up, Three Minute Thesis (3MT) Segment",
+        organization: "SciBlitz 1.0, IEEE CUET Student Branch",
+        period: "2025",
+        description: "Recognized for presenting scholarly research clearly and concisely in a competitive academic setting."
+    },
+    {
+        title: "Junior Executive Member",
+        organization: "BITFEST 2025, Department of CSE, KUET",
+        period: "January 2025",
+        description: "Contributed to the planning and successful organization of BITFEST 2025 through coordination, teamwork, and event support."
+    },
+    {
+        title: "Active GitHub Developer",
+        organization: "GitHub",
+        period: "Ongoing",
+        description: "Maintains repositories focused on full stack development, DevOps practices, cloud-native tools, and academic projects."
+    },
+    {
+        title: "Certifications in DevOps and Full Stack Web Development",
+        organization: "Ostad",
+        period: "Completed",
+        description: "Completed training in CI/CD pipelines, Docker, Kubernetes, cloud infrastructure, Django REST Framework, and React.js."
+    }
+];
 const skills = [
     {
         name: "Languages",
@@ -201,6 +251,7 @@ const skills = [
             "Java",
             "JavaScript",
             "PHP",
+            "Swift",
             "SQL"
         ]
     },
@@ -208,9 +259,13 @@ const skills = [
         name: "Frameworks",
         skills: [
             "React",
-            "Django",
             "Next.js",
-            "FastAPI"
+            "Django",
+            "FastAPI",
+            "Vue.js",
+            "Node.js",
+            "Laravel",
+            "Tailwind CSS"
         ]
     },
     {
@@ -220,7 +275,10 @@ const skills = [
             "Kubernetes",
             "AWS",
             "CI/CD",
-            "Linux"
+            "GitHub Actions",
+            "Prometheus",
+            "Grafana",
+            "SonarQube"
         ]
     },
     {
@@ -229,7 +287,19 @@ const skills = [
             "PyTorch",
             "TensorFlow",
             "Scikit-learn",
+            "Pandas",
+            "NumPy",
+            "NLTK",
             "Machine Learning"
+        ]
+    },
+    {
+        name: "Databases",
+        skills: [
+            "PostgreSQL",
+            "MySQL",
+            "SQLite",
+            "MongoDB"
         ]
     },
     {
@@ -237,9 +307,10 @@ const skills = [
         skills: [
             "OpenGL",
             "GLSL",
-            "PostgreSQL",
             "Git",
-            "GitHub"
+            "GitHub",
+            "Linux",
+            "Postman"
         ]
     }
 ];

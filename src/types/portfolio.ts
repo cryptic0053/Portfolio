@@ -4,7 +4,7 @@ export interface ResearchPaper {
     abstract: string;
     tags: string[];
     link: string;
-    status: "Published" | "Under Review" | "On Going";
+    status: "Published" | "Under Review" | "Ongoing";
 }
 
 export interface Project {
@@ -19,4 +19,18 @@ export interface Project {
 export interface SkillCategory {
     name: string;
     skills: string[];
+}
+
+export interface Education {
+    institution: string;
+    degree: string;
+    period: string;
+    cgpa: string;
+}
+
+export interface Experience {
+    title: string;
+    organization: string;
+    period: string;
+    description: string;
 }
