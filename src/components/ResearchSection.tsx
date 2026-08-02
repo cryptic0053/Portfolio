@@ -17,10 +17,10 @@ export default function ResearchSection() {
                 >
                     <h2 className="text-3xl md:text-4xl font-bold mb-4 flex items-center gap-3">
                         <BookOpen className="text-accent" size={32} />
-                        Publications & Research
+                        Research
                     </h2>
                     <p className="text-muted max-w-2xl text-lg">
-                        Academic work focused on Explainable AI, machine learning, and scalable algorithmic research.
+                        Academic work on scalable query processing algorithms and database systems.
                     </p>
                 </motion.div>
 
@@ -29,7 +29,7 @@ export default function ResearchSection() {
                         const hasPaperLink = paper.link && paper.link !== "#";
 
                         const statusClass =
-                            paper.status === "Published"
+                            paper.status === "Published" || paper.status === "Completed"
                                 ? "bg-accent/10 text-accent border-accent/20"
                                 : paper.status === "Under Review"
                                     ? "bg-amber-500/10 text-amber-400 border-amber-500/20"

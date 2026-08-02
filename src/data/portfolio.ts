@@ -2,16 +2,16 @@ import { ResearchPaper, Project, SkillCategory, Education, Experience } from "@/
 
 export const portfolioData = {
     name: "Anirban Ghosh Argha",
-    role: "4th-Year Computer Science and Engineering Student at KUET",
-    cgpa: "3.25",
-    titles: ["AI Researcher", "Full Stack Developer", "DevOps Enthusiast"],
+    role: "Computer Science and Engineering Graduate, KUET",
+    cgpa: "3.23",
+    titles: ["Full Stack Developer", "DevOps Enthusiast", "AI Researcher"],
     description:
-        "I am a 4th-year Computer Science and Engineering student at KUET with interests in Artificial Intelligence, full stack development, and cloud-native systems. I enjoy building practical software, exploring scalable backend technologies, and working on research problems that connect theory with real-world applications.",
+        "I am a Computer Science and Engineering graduate of KUET and a certified Fundamental IT Engineer (ITEE Level 2). I build full stack applications with React, Django, and FastAPI, containerize and orchestrate them with Docker and Kubernetes, and ship them through automated CI/CD pipelines. I am currently open to remote software engineering roles.",
     socials: {
         github: "https://github.com/cryptic0053",
         linkedin: "https://www.linkedin.com/in/anirban-argha-4a20b7278/",
         email: "mailto:anirbanargha0053@gmail.com",
-        cv: "/2007094_CV.pdf"
+        cv: "/Anirban_Ghosh_Argha_CV.pdf"
     }
 };
 
@@ -19,41 +19,32 @@ export const education: Education[] = [
     {
         institution: "Khulna University of Engineering & Technology (KUET)",
         degree: "B.Sc. in Computer Science and Engineering",
-        period: "2022 - 2026 (Expected)",
-        cgpa: "3.25 / 4.00"
+        period: "2022 - 2026",
+        cgpa: "3.23 / 4.00"
     },
     {
         institution: "Rajshahi College",
         degree: "Higher Secondary Certificate (HSC)",
         period: "2018 - 2020",
-        gpa: "5.00 / 5.00"
+        cgpa: "5.00 / 5.00"
     },
     {
         institution: "Rajshahi Collegiate School",
         degree: "Secondary School Certificate (SSC)",
         period: "2010 - 2018",
-        gpa: "5.00 / 5.00"
+        cgpa: "5.00 / 5.00"
     }
 ];
 
 export const researchPapers: ResearchPaper[] = [
     {
-        id: "paper-1",
-        title: "Quantitatively Validated XAI Framework for Maternal Health Risk Prediction in Rural Bangladesh",
+        id: "paper-thesis",
+        title: "HYDART-RQ: A Hybrid Framework for Durable Reverse Top-k Query Processing over Time-Varying Preferences",
         abstract:
-            "A novel Explainable AI framework applied to maternal health risk prediction, with quantitative validation to assess interpretability and reliability in critical healthcare settings.",
-        tags: ["AI", "Machine Learning", "NLP", "Explainable AI"],
+            "Undergraduate thesis supervised by Dr. K. M. Azharul Hasan, Professor, Department of CSE, KUET. The framework targets durable reverse top-k queries, whose results stay valid as user preference vectors drift over time, instead of recomputing answers from scratch at every timestamp. Awarded A+ across both thesis terms.",
+        tags: ["Databases", "Algorithms", "Query Processing", "Scalability"],
         link: "#",
-        status: "Under Review"
-    },
-    {
-        id: "paper-2",
-        title: "Scalable Algorithm for Reverse Top-k Query Processing",
-        abstract:
-            "An optimized and scalable algorithmic approach for reverse top-k query processing over large-scale datasets, designed to reduce computational overhead while maintaining strong performance.",
-        tags: ["Databases", "Algorithms", "Query Processing"],
-        link: "#",
-        status: "Ongoing"
+        status: "Completed"
     }
 ];
 
@@ -100,7 +91,16 @@ export const projects: Project[] = [
         description:
             "A scalable e-commerce application built with Vue.js and Node.js, using a decoupled architecture containerized with Docker and orchestrated through Kubernetes, with Prometheus-based monitoring support.",
         techBadges: ["Vue.js", "Node.js", "Docker", "Kubernetes", "Prometheus"],
-        githubLink: "#",
+        githubLink: "https://github.com/cryptic0053/Finch-EC",
+        liveLink: "#"
+    },
+    {
+        id: "project-recommender",
+        title: "Movie Recommender System",
+        description:
+            "A content-based recommender over the 5,000-title TMDB dataset, building tag vectors from genres, keywords, cast, and crew with CountVectorizer and ranking neighbours by cosine similarity, served through a Streamlit interface.",
+        techBadges: ["Python", "Scikit-learn", "Pandas", "NLTK", "Streamlit"],
+        githubLink: "https://github.com/cryptic0053/Movie-Recommender-System",
         liveLink: "#"
     },
     {
@@ -116,23 +116,30 @@ export const projects: Project[] = [
 
 export const experiences: Experience[] = [
     {
-        title: "1st Runner-Up, Three Minute Thesis (3MT) Segment",
+        title: "Fundamental IT Engineer (FE), ITEE Level 2",
+        organization: "Bangladesh IT-engineers Examination Center (BD-ITEC), Bangladesh Computer Council",
+        period: "April 2026",
+        description:
+            "Awarded Full Passer status in the national IT Engineers Examination, conducted under the ITPEC framework and aligned with Japan's IPA IT Engineers Examination, covering algorithms, databases, networks, security, and system architecture."
+    },
+    {
+        title: "1st Runner-Up, 3-Minute Thesis (3MT) Segment",
         organization: "SciBlitz 1.0, IEEE CUET Student Branch",
         period: "2025",
         description:
-            "Recognized for presenting scholarly research clearly and concisely in a competitive academic setting."
+            "Placed second in a national research communication contest, presenting scholarly work concisely and effectively within a strict three-minute format as a team of three."
     },
     {
-        title: "Junior Executive Member",
+        title: "Executive Member",
         organization: "BITFEST 2025, Department of CSE, KUET",
         period: "January 2025",
         description:
-            "Contributed to the planning and successful organization of BITFEST 2025 through coordination, teamwork, and event support."
+            "Recognized by the Head of Department and the Organizing Committee for leadership and dedication in delivering BITFEST 2025, a national inter-university technology festival."
     },
     {
-        title: "Certifications in DevOps Engineering and Full Stack Web Development",
+        title: "Certifications in DevOps and Full Stack Web Development",
         organization: "Ostad",
-        period: "Completed",
+        period: "2025",
         description:
             "Completed training in CI/CD pipelines, Docker, Kubernetes, cloud infrastructure, Django REST Framework, and React.js."
     }
@@ -141,7 +148,7 @@ export const experiences: Experience[] = [
 export const skills: SkillCategory[] = [
     {
         name: "Languages",
-        skills: ["C", "C++", "Python", "Java", "JavaScript", "PHP", "SQL"]
+        skills: ["C", "C++", "Python", "Java", "JavaScript", "TypeScript", "PHP", "SQL"]
     },
     {
         name: "Frameworks",
@@ -149,7 +156,7 @@ export const skills: SkillCategory[] = [
     },
     {
         name: "DevOps",
-        skills: ["Docker", "Kubernetes", "AWS", "CI/CD", "GitHub Actions", "Prometheus"]
+        skills: ["Docker", "Kubernetes", "AWS", "CI/CD", "GitHub Actions", "Prometheus", "Grafana", "SonarQube"]
     },
     {
         name: "AI / ML",
